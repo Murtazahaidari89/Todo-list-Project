@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  min-height: 205vmin;
+  background-image: url(./image/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: black;
+  color: aliceblue;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.taskClass {
+  padding: 1rem 0 2.5rem 0;
+  width: 90%;
+  text-align: center;
+  background-color: #8bb3afd2;
+  position: relative;
+  left: 17px;
+  border-radius: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.6rem;
+}
+.taskClass label {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.taskClass input {
+  height: 2rem;
+  text-align: center;
+  width: 80%;
+  font-size: 1.1rem;
+  position: relative;
+  border-radius: 1rem;
+  border: solid rgb(223, 209, 209) 1px;
+}
+.taskClass button {
+  font-size: 1.7rem;
+  background-color: #95b4b1d2;
+  border-style: none;
+  border-radius: 1rem;
+  color: #364b49;
+}
+
+section {
+  background-color: #8bb3afd2;
+  padding: 1rem 0 2.5rem 0;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  left: 17px;
+  backdrop-filter: blur(5px);
+  max-height: calc(100vh - 20rem);
+  border-radius: 1.5rem;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo-item {
+  background-color: #7a95928f;
+  flex: 1;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-align: justify;
+  width: 75%;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.4rem;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+ul > li input {
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+section button {
+  border-radius: 0.5rem;
+  padding: 0.45rem 0.2rem;
+  background-color: #7a9592;
+  color: aliceblue;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: solid gray;
+  cursor: pointer;
+}
+.complete-btn,
+.trash-btn {
+  background-color: rgb(101, 101, 255);
+  cursor: pointer;
+  max-width: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  padding: 0.7rem 0.2rem;
+  font-size: 0.9rem;
+  width: 30%;
+}
+.trash-btn {
+  background-color: rgb(182, 106, 7);
+}
+footer span {
+  font-size: 1.1rem;
+}
+footer button {
+  background-color: rgba(248, 186, 70, 0.87);
+  border: 40px rgba(184, 133, 40, 0.87);
+  color: black;
+  margin-left: 0.5rem;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: 2.8px line-through rgb(184, 37, 37);
+  opacity: 3;
+}
+
+/* Media Query */
+/* more than 600px Tablet size*/
+@media (min-width: 600px) {
+  header {
+    height: 10rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .taskClass {
+    position: relative;
+    left: 35px;
+    margin-bottom: 2rem;
+    height: 12rem;
+  }
+  .taskClass input {
+    height: 4rem;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+  }
+  .taskClass label {
+    font-size: 3rem;
+  }
+  .taskClass button {
+    font-size: 3.2rem;
+  }
+  section {
+    padding: 2rem 0 2.5rem 0;
+    position: relative;
+    left: 30px;
+    max-height: calc(200vh - 50rem);
+  }
+  section button {
+    padding: 0.5rem 0.5rem;
+    font-size: 2rem;
+  }
+  .todo-item {
+    max-width: 650px;
+    padding: 1.2rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  .complete-btn,
+  .trash-btn {
+    max-width: 50px;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  footer span {
+    font-size: 2.5rem;
+  }
+}
+
+/* Computer screen */
+
+@media (min-width: 1000px) {
+  header {
+    font-size: 1rem;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+  }
+  .taskClass {
+    position: relative;
+    left: 250px;
+    margin-bottom: 1.5rem;
+    height: 9rem;
+    width: 60%;
+  }
+  .taskClass input {
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .taskClass label {
+    font-size: 1.5rem;
+  }
+  .taskClass button {
+    font-size: 2.5rem;
+  }
+  section {
+    padding: 1.5rem 0 2.5rem 0;
+    position: relative;
+    left: 250px;
+    width: 60%;
+  }
+  section button {
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+  }
+  .todo-item {
+    max-width: 650px;
+    padding: 0.6rem;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .complete-btn,
+  .trash-btn {
+    max-width: 50px;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+  }
+  footer span {
+    font-size: 1.5rem;
+  }
+}

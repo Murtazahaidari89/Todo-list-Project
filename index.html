@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <header>
+        <h1>To do list</h1>
+    </header>
+    <main>
+        <form class="form">
+            <div class="taskClass">
+                <label for="task">New task:</label> <br>
+                <input type="text" id="task-input" name="task" placeholder="add your new task">
+                <button class="todo-btn" type="submit">
+                <i class="fas fa-plus-circle"></i>
+                </button>
+            </div>
+        </form>
+        <section>
+                <ul class="list-item"></ul>
+        <footer>
+            <span>You have <span class="pending"></span> tasks pending</span>
+            <button id="deleteallbtn" class="clear-btn">Delete All</button>
+        </footer> 
+        </section>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
